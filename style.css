@@ -1,0 +1,322 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f03d0617;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    border: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: cursive;
+}
+
+/* navigation bar */
+nav {
+    background-color: #cc4400af;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid #812b00;
+    padding: 0 40px;
+}
+
+nav a:hover,
+.active {
+    color: aliceblue;
+}
+
+nav a {
+    border-right: 1px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 20px;
+    display: inline-block;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+}
+
+nav .logo img {
+    height: 90px;
+}
+
+/* body */
+
+nav .list {
+    margin-left: auto;
+}
+
+nav li.last a {
+    border-right: none;
+}
+
+div.d1 img {
+    width: 100%;
+    height: 470px;
+}
+
+h1.head {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.center {
+    margin-top: 40px;
+    text-align: center;
+}
+
+h2.head2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+p.line {
+    font-size: 20px;
+}
+
+p.line1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main {
+    margin: 0 150px;
+}
+
+div.parent {
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+div.pic {
+    width: 50%;
+}
+
+div.pic img {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+
+div.para {
+    padding: 0px 20px;
+    width: 50%;
+}
+
+div.child {
+    padding: 10px;
+    width: 33.33%;
+}
+
+div.child img {
+    border-radius: 10px;
+    height: auto;
+    width: 100%;
+}
+
+div.parent1 {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+h1.hh1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2.hh2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+div.child2 {
+    width: 50%;
+    text-align: center;
+}
+
+/* contact us */
+form {
+    padding: 0 20px
+}
+
+form input {
+    margin: 7px 0px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #cc4400af;
+    width: 50%;
+}
+
+form button {
+    width: 20%;
+    border: 1px solid black;
+    margin: 7px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #cc4400af;
+}
+
+form textarea {
+    border: 1px solid black;
+    margin: 7px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #cc4400af;
+    width: 50%;
+}
+
+/* about us */
+div.child3 {
+    width: 25%;
+}
+
+div.child3 img {
+    border-radius: 10px;
+}
+
+p.line2 {
+    text-align: center;
+}
+
+h2.hh1 {
+    margin: 20px 0px;
+}
+
+div.main li {
+    padding: 10px;
+
+}
+
+div.icons a {
+    font-size: 150px;
+    padding: 20px;
+}
+
+div.point ul {
+    text-align: left;
+}
+
+.about {
+    flex-wrap: wrap;
+}
+
+.about .child3 {
+    width: 25%;
+    padding: 10px;
+}
+
+.child3 img {
+    width: 100%;
+}
+
+.point {
+    padding-left: 20px;
+}
+
+/* footer */
+footer p {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: #cc4400af;
+    border-top: 5px solid #812b00;
+}
+
+@media (max-width: 992px) {
+    .main {
+        margin: 0 20px;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+        flex-direction: column;
+    }
+
+    .home-secs:nth-of-type(2n+1) {
+        flex-direction: column-reverse;
+    }
+
+    .home-secs:nth-of-type(2n+2) {
+        flex-direction: column;
+    }
+
+    .home-secs .para {
+        margin-bottom: 20px;
+    }
+
+    .home-secs>div {
+        width: 100%;
+    }
+
+    .parent1>div {
+        width: 50%;
+    }
+
+    .about .child3 {
+        width: 33%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    .contact-sec {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .contact-sec>div {
+        width: 100%;
+    }
+
+    .parent1>div {
+        width: 100%;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .parent>.child3 {
+        width: 100%;
+    }
+
+    .about .child3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about .child3 {
+        width: 100%;
+    }
+}
